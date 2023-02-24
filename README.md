@@ -16,3 +16,4 @@ testing just the modified cases:
 ```javascript
 npm demo
 ```
+(don't forget to add @demo tags in front of the cases in feature file)
