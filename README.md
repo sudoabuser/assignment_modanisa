@@ -2,8 +2,8 @@
 This assignment aims to execute a series of six randomly made-up user stories.
 
 # Technologies used
-I've used Javascript language and Puppeteer to extract data from http://todomvc.com/examples/vue/
-and Cucumber-js framework for creating such cases.
+I've used Javascript language and [Puppeteer](https://pptr.dev/) to extract data from [this](http://todomvc.com/examples/vue/) to-do list
+and [Cucumber-js](https://cucumber.io/) framework for creating such cases.
 
 # Usage
 
