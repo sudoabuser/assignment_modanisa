@@ -17,3 +17,6 @@ testing just the modified cases:
 npm demo
 ```
 (don't forget to add @demo tags in front of the cases in feature file)
+
+# Publish
+detailed log is being published after every run. you can see the link as a message as the execution is finished.
