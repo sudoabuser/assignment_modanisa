@@ -30,17 +30,3 @@ Feature: ToDo list
         Given ToDo list with "rest for a while" and "drink water" item in order
         When I click on delete button next to "rest for a while" item
         Then I should see "drink water" item in ToDo list
-
-
-# When coping with larger data groups we could use scenario outline.
-# Since in this project we don't have any duplicate scenarios, I believe there's no need.
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Scenario Outline: Adding item to toDo list
-
-#     Given Empty ToDo list
-#     When I write "<toDo>" to "<selector>" and press "<key>"
-#     Then I should see "<toDo>" item in ToDo list
-
-#     Examples:
-#         | toDo          | selector  | key   |
-#         | buy some milk | .new-todo | Enter |

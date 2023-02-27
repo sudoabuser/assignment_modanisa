@@ -1,14 +1,8 @@
 const puppeteer = require('puppeteer')
-const { Given, When, Then, Before, After } = require('@cucumber/cucumber')
+const { Given, When, Then, After, Before } = require('@cucumber/cucumber')
 const assert = require('assert');
-const { emitKeypressEvents } = require('readline');
-const { AssertionError } = require('assert');
-const { setDefaultResultOrder } = require('dns');
-
 let browser;
 let page;
-
-
 
 Before(async function () {
     browser = await puppeteer.launch({ headless: false })
@@ -108,9 +102,9 @@ When("I click on checkbox next to {string} item", async (item) => {
     let a = await page.evaluate(() => document.querySelector('body > section > section > ul > li > div > label').previousElementSibling.checked
     )
     if (a == true) {
-        console.log("checkox is checked")
+        console.log("checkbox is checked")
     } else {
-        console.log("checkox is not checked")
+        console.log("checkbox is not checked")
     }
 
 })
@@ -137,6 +131,7 @@ Then("I should see {string} item in ToDo list", async (string) => {
     var countContent = await page.$(".todo-count")
     let countContentText = await page.evaluate(el => el.textContent, countContent)
     assert.strictEqual(countContentText.trimEnd(), "1 item left")
+
 })
 
 Then("I should see {string} item inserted to ToDo list below {string} item", async (string, string2) => {
@@ -153,6 +148,7 @@ Then("I should see {string} item inserted to ToDo list below {string} item", asy
 
     assert.strictEqual(itemAboveText, string2)
     assert.strictEqual(itemBelowText, string)
+
 })
 
 Then("I should see {string} item marked as DONE", async (string) => {
@@ -168,6 +164,7 @@ Then("I should see {string} item marked as DONE", async (string) => {
     } catch (error) {
         Error("item is not marked as done :", string)
     }
+
 })
 
 Then("I should see {string} item marked as UNDONE", async (string) => {
@@ -183,6 +180,7 @@ Then("I should see {string} item marked as UNDONE", async (string) => {
     } catch (error) {
         Error("item is marked as done :", string)
     }
+
 })
 
 Then("List should be empty", async () => {
@@ -197,4 +195,5 @@ Then("List should be empty", async () => {
     } catch (error) {
         console.log("ToDo list is already empty!")
     }
+
 })
