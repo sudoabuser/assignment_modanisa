@@ -1,11 +1,12 @@
 Feature: ToDo list
     This is a simple to do list
 
+    @demo
     Scenario: Adding an item
         Given Empty ToDo list
         When I write "buy some milk" to text box and press "Enter"
         Then I should see "buy some milk" item in ToDo list
-
+    @demo
     Scenario: Inserting an item
         Given ToDo list with "buy some milk" item
         When I write "enjoy the assignment" to text box and press "Enter"
@@ -15,7 +16,7 @@ Feature: ToDo list
         Given ToDo list with "buy some milk" item
         When I click on checkbox next to "buy some milk" item
         Then I should see "buy some milk" item marked as DONE
-    @demo
+
     Scenario: Marking as undone
         Given ToDo list with "buy some milk" item marked
         When I click on checkbox next to item

@@ -4,16 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
-    "demo": "cucumber-js --tags @demo "
+    "test": "cucumber-js --exit",
+    "demo": "cucumber-js --tags @demo --exit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cucumber/cucumber": "^8.10.0"
+    "@cucumber/cucumber": "^8.11.1"
   },
   "dependencies": {
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^5.5.0",
     "puppeteer": "^19.5.2"
   }
 }

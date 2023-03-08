@@ -1,0 +1,424 @@
+[
+  {
+    "description": "    This is a simple to do list",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo-list;adding-an-item",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Adding an item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 424803125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Empty ToDo list",
+            "match": {
+              "location": "features/step_definitions/adding_item.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 759035036
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I write \"buy some milk\" to text box and press \"Enter\"",
+            "match": {
+              "location": "features/step_definitions/adding_item.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84555420
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see \"buy some milk\" item in ToDo list",
+            "match": {
+              "location": "features/step_definitions/adding_item.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42758054
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30452929
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-list;inserting-an-item",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Inserting an item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 489709647
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "ToDo list with \"buy some milk\" item",
+            "match": {
+              "location": "features/step_definitions/inserting_item.js:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 758063,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'goto')\n    at World.<anonymous> (/home/sudoabuser/Desktop/assignment_modanisa/features/step_definitions/inserting_item.js:8:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I write \"enjoy the assignment\" to text box and press \"Enter\"",
+            "match": {
+              "location": "features/step_definitions/adding_item.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see \"enjoy the assignment\" item inserted to ToDo list below \"buy some milk\" item",
+            "match": {
+              "location": "features/step_definitions/inserting_item.js:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31889824
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@demo",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-list;marking-as-done",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Marking as done",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 483649780
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "ToDo list with \"buy some milk\" item",
+            "match": {
+              "location": "features/step_definitions/inserting_item.js:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 812367,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'goto')\n    at World.<anonymous> (/home/sudoabuser/Desktop/assignment_modanisa/features/step_definitions/inserting_item.js:8:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click on checkbox next to \"buy some milk\" item",
+            "match": {
+              "location": "features/step_definitions/marking_done.js:7"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see \"buy some milk\" item marked as DONE",
+            "match": {
+              "location": "features/step_definitions/marking_done.js:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29271023
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-list;marking-as-undone",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Marking as undone",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 503960873
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "ToDo list with \"buy some milk\" item marked",
+            "match": {
+              "location": "features/step_definitions/marking_undone.js:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 972933,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'goto')\n    at World.<anonymous> (/home/sudoabuser/Desktop/assignment_modanisa/features/step_definitions/marking_undone.js:10:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I click on checkbox next to item",
+            "match": {
+              "location": "features/step_definitions/marking_undone.js:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see \"buy some milk\" item marked as UNDONE",
+            "match": {
+              "location": "features/step_definitions/marking_undone.js:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30067780
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-list;deleting-item",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Deleting item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 465904117
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "ToDo list with \"rest for a while\" item",
+            "match": {
+              "location": "features/step_definitions/inserting_item.js:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 444380,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'goto')\n    at World.<anonymous> (/home/sudoabuser/Desktop/assignment_modanisa/features/step_definitions/inserting_item.js:8:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I click on delete button next to \"rest for a while\" item",
+            "match": {
+              "location": "features/step_definitions/deleting_item.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "List should be empty",
+            "match": {
+              "location": "features/step_definitions/deleting_item.js:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 43150977
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-list;removing-one-item",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Removing one item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 517979322
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "ToDo list with \"rest for a while\" and \"drink water\" item in order",
+            "match": {
+              "location": "features/step_definitions/removing_one_item.js:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1160004,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'goto')\n    at World.<anonymous> (/home/sudoabuser/Desktop/assignment_modanisa/features/step_definitions/removing_one_item.js:9:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I click on delete button next to \"rest for a while\" item",
+            "match": {
+              "location": "features/step_definitions/deleting_item.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I should see \"drink water\" item in ToDo list",
+            "match": {
+              "location": "features/step_definitions/adding_item.js:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29114941
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo-list",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "ToDo list",
+    "tags": [],
+    "uri": "features/toDo.feature"
+  }
+]
