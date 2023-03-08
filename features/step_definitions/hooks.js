@@ -1,15 +1,15 @@
 const puppeteer = require('puppeteer');
 const { Before, After } = require('@cucumber/cucumber');
-const context = {};
+const ppt = {};
 
 Before(async function () {
-    context.browser = await puppeteer.launch({ headless: false });
-    context.pages = await context.browser.pages()
-    context.page = context.pages[0]
+    ppt.browser = await puppeteer.launch({ headless: false });
+    ppt.pages = await ppt.browser.pages()
+    ppt.page = ppt.pages[0]
 });
 
 After(async function () {
-    await context.browser.close();
+    await ppt.browser.close();
 });
 
-module.exports = context;
+module.exports = ppt;
