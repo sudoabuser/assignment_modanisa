@@ -4,7 +4,8 @@ const context = {};
 
 Before(async function () {
     context.browser = await puppeteer.launch({ headless: false });
-    context.page = await context.browser.newPage();
+    context.pages = await context.browser.pages()
+    context.page = context.pages[0]
 });
 
 After(async function () {
