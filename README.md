@@ -1,6 +1,6 @@
 # Goal of the assignment
 
-This assignment aims to execute a series of six randomly made-up user stories.
+This assignment aims to execute a series of six user stories.
 
 # Technologies used
 
